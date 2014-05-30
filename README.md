@@ -18,8 +18,10 @@ Click at initial point, release at diagonal point
 ####Circle tool####
 centered
 
+####Text tool####
+
 ####Generating tikz code####
-Click "Show tikz" to generate tikz figure code from drawing. You can edit coordinates and update the figure by clicking "Compile tikz".
+Click "Show tikz" to generate tikz figure code from drawing. You can also edit the tikz code and update the figure by clicking "Compile tikz".
 
 Formatting does not show on the preview, but will work when compiled in LaTeX.
 
