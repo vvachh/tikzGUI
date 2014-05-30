@@ -11,7 +11,7 @@ class Application(tk.Frame):
 		self.createWidgets()
 		self.activeTool = 'line'
 		self.activeLine = 'reg'
-		self.activePattern = 'none'
+		self.activePattern = 'empty'
 		self.activeWeight = 'thin'
 
 		self.linestrings = {'reg': '', 'dot': 'dotted', 'rarrow': '->', 'larrow': '<-'}
@@ -133,6 +133,7 @@ class Application(tk.Frame):
 		self.lineButton.config(relief = tk.RAISED)
 		self.rectButton.config(relief = tk.RAISED)
 		self.circButton.config(relief = tk.RAISED)
+		self.textButton.config(relief = tk.RAISED)
 	def pickLine(self):
 		self.disableAll()
 		self.lineButton.config(relief = tk.SUNKEN)
