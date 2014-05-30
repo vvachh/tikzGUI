@@ -38,6 +38,12 @@ class Application(tk.Frame):
 		self.compileButton = tk.Button(self.codebuttons, text='Compile tikz', command = self.compile)
 		self.compileButton.grid(row=0, column=1)
 
+		def clear():
+			self.canvas.delete('all')
+			self.objects = {'line':[], 'circle':[], 'rectangle':[], 'text':[]}
+		self.clearButton = tk.Button(self.codebuttons, text='Clear', command=clear )
+		self.clearButton.grid(row=0,column=2)
+
 		# Tool buttons
 		self.toolbuttons = tk.Frame(self)
 		self.toolbuttons.grid(row=1, column=0)
